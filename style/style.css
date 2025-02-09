@@ -408,7 +408,7 @@ a:active {
   outline: none;
   padding-left: 25px;
   font-weight: 500;
-  color: #465844;
+  /* color: #465844; */
   background-color: #B0BD9E;
   border-radius: 10px;
 
