@@ -1,0 +1,39 @@
+
+Google Calendar Template:
+
+Replace the parameters with your event details:
+
+text: Event title (e.g., "Meeting Title").
+details: Event description (e.g., "Join us for the meeting").
+location: Event location (e.g., "Virtual or Physical Address").
+dates: Start and end date/time in YYYYMMDDTHHMMSSZ format.
+Example:
+
+20240101T150000Z/20240101T160000Z represents January 1, 2024, from 3:00 PM to 4:00 PM UTC.
+
+https://savvytime.com/converter/est-to-z  (time converter site)
+
+
+<a 
+	href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Meeting+Title&details=Join+us+for+the+meeting&location=Virtual+or+Physical+Address&dates=20240101T150000Z/20240101T160000Z" target="_blank">
+        Add to Google Calendar
+</a>
+
+href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=ECAM+Fundrasing&details=fundrasing+for+ethiopian+educational+cultural+event+in+Maryland.&location=Roger+Carter+Community+Center&dates=20250406T210000Z/20250406T230000Z"target="_blank">
+
+
+<iframe class="g-form" src="https://docs.google.com/forms/d/e/1FAIpQLSdyhq1KI2LD3iSd3eFq0LYBKHlQfRHiHiuvjTJW37FEOuYR4Q/viewform?embedded=true" width="640" height="720" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+ qrcode
+
+            <img
+        src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://docs.google.com/forms/d/e/1FAIpQLSceG_VyVUwOGHqjsB_jQMlaOy9CiIx-LCVNherBNaNrdBC2JA/viewform?usp=sf_link"
+        alt="QR Code">
+
+
+
+        Ethiopian+day+event+in+Maryland
+        Cedar+Lane+Park+East+Pavilion
+        20250803T100000Z/20240803T200000Z
+
+        href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Ethiopian+Day+by+ECAM&details=Ethiopian+educational+cultural+event+in+Maryland.&location=Cedar+Lane+Park+East+Pavilion&dates=20250803T140000Z/20250803T000000Z"target="_blank">
