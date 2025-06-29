@@ -1,6 +1,8 @@
 
 Google Calendar Template:
 
+reload page CMD + SHIF + R
+
 Replace the parameters with your event details:
 
 text: Event title (e.g., "Meeting Title").
@@ -37,3 +39,20 @@ href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=ECAM+Fund
         20250803T100000Z/20240803T200000Z
 
         href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Ethiopian+Day+by+ECAM&details=Ethiopian+educational+cultural+event+in+Maryland.&location=Cedar+Lane+Park+East+Pavilion&dates=20250803T140000Z/20250803T000000Z"target="_blank">
+        
+register here button
+
+        change the offcanvasScrolling id and header to new name
+
+
+******************  convert pictures  *********************
+
+for file in *.jpg *.jpeg; do   [ -e "$file" ] || continue  # skip if no match;   cwebp "$file" -q 80 -o "${file%.*}.webp"; done; 
+
+
+ffmpeg -i comm-event04.webp -vf scale=20:-1 comm-event04-small.webp
+
+
+for file in *.webp; do
+  ffmpeg -i "$file" -vf scale=20:-1 "${file%.webp}_lowquality.webp"
+done        
