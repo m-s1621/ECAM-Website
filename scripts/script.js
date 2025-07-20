@@ -105,15 +105,18 @@ const commEventImages =[
     "fundraising_3890.webp"
    ]
 
+
 function openModal(image) {
-    console.log("openModal triggered");
-    modal.style.display = 'flex';
-    modalImg.src = image.src;
+  // console.log("openModal triggered");
+  document.getElementById('sticky-thumbnails').style.display = 'none';
+  modal.style.display = 'flex';
+  modalImg.src = image.src;
 }
 
 function closeModal() {
-    console.log("closeModal triggered");
-    modal.style.display = 'none';
+  // console.log("closeModal triggered");
+  modal.style.display = 'none';
+  document.getElementById('sticky-thumbnails').style.display = 'block';
 }
 
 // Loop through the images and add them to the gallery
@@ -206,6 +209,7 @@ function thumbnailScroll() {
 document.addEventListener('DOMContentLoaded', () => {
   thumbnailScroll();
 
+
   // On page load, scroll to any open collapse
   const opened = document.querySelector('.collapse.show');
   if (opened) {
@@ -215,6 +219,8 @@ document.addEventListener('DOMContentLoaded', () => {
       window.scrollTo({ top: y, behavior: 'smooth' });
     }, 400);
   }
+
+  
 });
 
 
@@ -223,4 +229,9 @@ document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('DOMContentLoaded', thumbnailScroll);
 
   
- 
+ // promo video 
+  const player = new Plyr('.js-player', {
+    controls: ['play', 'progress', 'current-time', 'mute', 'volume', 'fullscreen'],
+    ratio: '12:7'
+  });
+

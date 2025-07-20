@@ -15,6 +15,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap" rel="stylesheet" />
 
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+
   <link rel="stylesheet" href="../style/style.css" />
   <title>The Ethiopian Community Association in Maryland</title>
 </head>
@@ -127,7 +129,7 @@
       <p>Or Scan this QR Code to Register</p>
       <img
         src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://docs.google.com/forms/d/e/1FAIpQLSd6UgcEDFQRfHSWSnBTlPIZNW6qhLM9uingArfDfgfIFWgW8Q/viewform?usp=sf_link"
-        alt="QR Code">
+        alt="QR Code" style="filter: blur(5px);">
     
     </div>
 
@@ -160,7 +162,7 @@
     <p>Or Scan this QR Code to Register</p>
     <img
       src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://docs.google.com/forms/d/e/1FAIpQLSceG_VyVUwOGHqjsB_jQMlaOy9CiIx-LCVNherBNaNrdBC2JA/viewform?usp=sf_link"
-      alt="QR Code">
+      alt="QR Code" style="filter: blur(5px);">
   </div> 
 
 
@@ -208,7 +210,7 @@
     </div> -->
 
     <!-- Event 3 -->
-    <div class="event-card" id="alert-event">
+    <div class="event-card" >
       <h3>Ethiopian Day</h3>
       <p><strong>Date:</strong> Sunday August 03, 2025</p>
       <p><strong>Time:</strong> 10:00AM - 8:00PM</p>
@@ -238,12 +240,34 @@
       <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://docs.google.com/forms/d/e/1FAIpQLSfZnJSrbch48b8hu9WwkS3QAgmdxQCAD4I8XZgqMatbbUor6w/viewform?usp=sf_link" alt="QR Code">
     </div> 
 
-
-
-
-
   </div>
 
+  <!-- new event -->
+
+  <section class="new_event">
+
+    <div class="new-event-title" id="alert-event">
+      <h3>New Event Coming</h3>
+      <hr>
+    </div>
+
+    <div class="video-wrapper">
+      <div class="new_event_left">
+      <video class="js-player" autoplay unmuted loop playsinline controls>
+        <source src="../images/video/ethiopian_day_promo.mp4" type="video/mp4">
+      </video>
+      </div>
+
+      <div class="new_event_right">
+        <img src="../images/ethiopian_day_flyer (1).jpg" alt="ethiopian day flyer" id="flyer" >
+      </div>
+    
+    </div>
+    
+  </section>
+
+  
+  
   <!-- team and officers  -->
 
   <div class="team-header" id="officers">
@@ -290,7 +314,7 @@
 
       <div class="team-card">
         <div class="team-img">
-          <img src="../images/Team_pictures/user_icon.png" alt="">
+          <img src="../images/Team_pictures/masresha.png" alt="">
         </div>
         <div class="team-detail">
           <h4>Mrs. Mesresha<br> Ayele</h4>
@@ -414,6 +438,11 @@
       </div>
     </div>
   </footer>
+
+    <!-- script -->
+    <script src="../scripts/script.js"></script>
+    <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+   
 </body>
 
 </html>
