@@ -1488,7 +1488,12 @@ border-radius: 8px;
     font-size: small;
     text-align: center;
   }
-
+.sticky-thumbnails-inner{
+  height: 250px;
+}
+.thumbnail-wrapper{
+  height: 100px;
+}
   .img-thumbnail {
     padding: .25rem;
     background-color: #B0BD9E;
