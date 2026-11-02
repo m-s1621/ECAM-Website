@@ -771,6 +771,9 @@ a:active {
   /* padding-left: 100px; */
    
 }
+video[poster] {
+  object-fit: cover;
+}
 
 .new_event_left,
 .new_event_right {
@@ -1038,6 +1041,27 @@ border-radius: 8px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.454), 0 6px 20px 0 rgba(0, 0, 0, 0.545);
 }
 
+.album-tabs {
+  --bs-nav-link-color: #B0BD9E;
+  --bs-nav-link-hover-color: #cde1d7;
+  --bs-nav-pills-link-active-bg: #B0BD9E;
+  --bs-nav-pills-link-active-color: #313d30;
+}
+
+.album-tabs .nav-link {
+  border: 1px solid #B0BD9E;
+  text-align: left;
+}
+
+.album-sidebar {
+  position: sticky;
+  top: var(--album-bar-height, 300px); /* sits just under the Select Album bar */
+  align-self: flex-start;              /* without this the column stretches and can't stick */
+  z-index: 1;
+  background-color: #465844;           /* so photos don't show through behind the buttons */
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 
 /*********************************** alert  ***********************************/
 @keyframes slideDown {
@@ -1058,6 +1082,7 @@ border-radius: 8px;
   height: 100px;
   margin-left: 360px;
 }
+
 
 
 
@@ -1228,7 +1253,7 @@ border-radius: 8px;
 
   .mission-right img {
 
-    width: 300px;
+    width: 250px;
     height: 200px;
   }
 
@@ -1532,7 +1557,7 @@ border-radius: 8px;
 }
 
 .thumbnail-wrapper{
-  height: 100px;
+  height: 80px;
 }
 
 #collapse4 .health-card{
@@ -1566,15 +1591,16 @@ border-radius: 8px;
     max-width: 50%;
     height: auto;
 }
-  footer {
+footer {
     width: 100%;
     height: 100px;
     font-size: 8px;
-  }
+   
+}
 
-  .footer-logo {
+.footer-logo {
     width: 20px;
     height: 20px;
-  }
+}
 
 }
